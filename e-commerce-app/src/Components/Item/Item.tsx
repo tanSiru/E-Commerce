@@ -1,6 +1,10 @@
 import { Wrapper, Content, Img, ImgDiv, ItemDetail, Price } from './Item.styles'
 
     export default function Item() {
+
+
+
+
     return (
         <Wrapper>
             <Content>
