@@ -1,13 +1,12 @@
-import React from 'react';
 import './App.css';
 import TopBar from './Components/TopBar/TopBar';
-import Item from './Components/Item/Item';
+import GridItem from './Components/GridItem/GridItem';
 
 function App() {
   return (
     <div className="App">
       <TopBar/>
-      <Item/>
+      <GridItem/>
     </div>
   );
 }

@@ -1,24 +1,28 @@
 import { Wrapper, Content, Img, ImgDiv, ItemDetail, Price } from './Item.styles'
 
-    export default function Item() {
+type Props = {
+    detail:string;
+    alt:string;
+    imgUrl:string;
+    price:number;
+}
 
-
-
-
+    export default function Item({detail, alt, imgUrl, price}:Props) {
+        // console.log(imgUrl)
     return (
         <Wrapper>
             <Content>
 
                 <ImgDiv>
-                    <Img src={require("../../ProductImages/cirnofumo.png")} alt="product"/>
+                    <Img src={imgUrl} alt={alt}/>
                 </ImgDiv>
 
                 <ItemDetail>
-                    Fumo Plush
+                    {detail}
                 </ItemDetail>
 
                 <Price>
-                    $999999
+                    ${price}
                 </Price>
 
             </Content>
