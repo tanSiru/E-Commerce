@@ -4,20 +4,139 @@
             "kind":"plush",
             "itemDetail":"cirno fumo plush",
             "price":999,
-            "imgUrl":"../../ProductImages/cirnofumo.png"
+            "imgUrl":"cirnofumo.png"
 
         },
         {
             "kind":"plush",
             "itemDetail":"remilia scarlet fumo plush",
             "price":999,
-            "imgUrl":"../../ProductImages/remilia.png"
+            "imgUrl":"remilia.png"
         },
         {
             "kind":"plush",
             "itemDetail":"yuyuko fumo plush",
             "price":999,
-            "imgUrl":"../../ProductImages/yuyuko.jpeg"
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"cirno fumo plush",
+            "price":999,
+            "imgUrl":"cirnofumo.png"
+
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"cirno fumo plush",
+            "price":999,
+            "imgUrl":"cirnofumo.png"
+
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"cirno fumo plush",
+            "price":999,
+            "imgUrl":"cirnofumo.png"
+
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"cirno fumo plush",
+            "price":999,
+            "imgUrl":"cirnofumo.png"
+
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"cirno fumo plush",
+            "price":999,
+            "imgUrl":"cirnofumo.png"
+
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"plush",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
         }
     ]
 }

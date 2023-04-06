@@ -8,13 +8,12 @@ type Props = {
 }
 
     export default function Item({detail, alt, imgUrl, price}:Props) {
-        // console.log(imgUrl)
     return (
         <Wrapper>
             <Content>
 
                 <ImgDiv>
-                    <Img src={imgUrl} alt={alt}/>
+                    <Img src={require("../../ProductImages/" + imgUrl)} alt={alt}/>
                 </ImgDiv>
 
                 <ItemDetail>
