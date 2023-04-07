@@ -1,7 +1,83 @@
 {
     "plush":[
         {
-            "kind":"plush",
+            "kind":"touhou",
+            "itemDetail":"cirno fumo plush",
+            "price":999,
+            "imgUrl":"cirnofumo.png"
+
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"cirno fumo plush",
+            "price":999,
+            "imgUrl":"cirnofumo.png"
+
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"cirno fumo plush",
+            "price":999,
+            "imgUrl":"cirnofumo.png"
+
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"cirno fumo plush",
+            "price":999,
+            "imgUrl":"cirnofumo.png"
+
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"remilia scarlet fumo plush",
+            "price":999,
+            "imgUrl":"remilia.png"
+        },
+        {
+            "kind":"touhou",
+            "itemDetail":"yuyuko fumo plush",
+            "price":999,
+            "imgUrl":"yuyuko.jpeg"
+        },
+        {
+            "kind":"touhou",
             "itemDetail":"cirno fumo plush",
             "price":999,
             "imgUrl":"cirnofumo.png"
@@ -40,70 +116,6 @@
         },
         {
             "kind":"plush",
-            "itemDetail":"cirno fumo plush",
-            "price":999,
-            "imgUrl":"cirnofumo.png"
-
-        },
-        {
-            "kind":"plush",
-            "itemDetail":"remilia scarlet fumo plush",
-            "price":999,
-            "imgUrl":"remilia.png"
-        },
-        {
-            "kind":"plush",
-            "itemDetail":"yuyuko fumo plush",
-            "price":999,
-            "imgUrl":"yuyuko.jpeg"
-        },
-        {
-            "kind":"plush",
-            "itemDetail":"cirno fumo plush",
-            "price":999,
-            "imgUrl":"cirnofumo.png"
-
-        },
-        {
-            "kind":"plush",
-            "itemDetail":"remilia scarlet fumo plush",
-            "price":999,
-            "imgUrl":"remilia.png"
-        },
-        {
-            "kind":"plush",
-            "itemDetail":"yuyuko fumo plush",
-            "price":999,
-            "imgUrl":"yuyuko.jpeg"
-        },
-        {
-            "kind":"plush",
-            "itemDetail":"cirno fumo plush",
-            "price":999,
-            "imgUrl":"cirnofumo.png"
-
-        },
-        {
-            "kind":"plush",
-            "itemDetail":"remilia scarlet fumo plush",
-            "price":999,
-            "imgUrl":"remilia.png"
-        },
-        {
-            "kind":"plush",
-            "itemDetail":"yuyuko fumo plush",
-            "price":999,
-            "imgUrl":"yuyuko.jpeg"
-        },
-        {
-            "kind":"plush",
-            "itemDetail":"cirno fumo plush",
-            "price":999,
-            "imgUrl":"cirnofumo.png"
-
-        },
-        {
-            "kind":"plush",
             "itemDetail":"remilia scarlet fumo plush",
             "price":999,
             "imgUrl":"remilia.png"
@@ -125,18 +137,52 @@
             "itemDetail":"yuyuko fumo plush",
             "price":999,
             "imgUrl":"yuyuko.jpeg"
+        }
+    ],
+    "manga":[
+        {
+            "kind":"mongatari",
+            "itemDetail":"bake manga vol 1",
+            "price":999,
+            "imgUrl":"bake1.jpeg"
         },
         {
-            "kind":"plush",
-            "itemDetail":"remilia scarlet fumo plush",
+            "kind":"mongatari",
+            "itemDetail":"bake manga vol 3",
             "price":999,
-            "imgUrl":"remilia.png"
+            "imgUrl":"bake3.jpeg"
         },
         {
-            "kind":"plush",
-            "itemDetail":"yuyuko fumo plush",
+            "kind":"mongatari",
+            "itemDetail":"bake manga vol 7",
             "price":999,
-            "imgUrl":"yuyuko.jpeg"
+            "imgUrl":"bake7.jpeg"
+        },
+        {
+            "kind":"mongatari",
+            "itemDetail":"bake manga vol 9",
+            "price":999,
+            "imgUrl":"bake9.jpeg"
+        },
+        {
+            "kind":"mongatari",
+            "itemDetail":"bake manga vol 10",
+            "price":999,
+            "imgUrl":"bake10.jpeg"
+        },
+        {
+            "kind":"mongatari",
+            "itemDetail":"bake manga vol 10",
+            "price":999,
+            "imgUrl":"bake13.jpeg"
+        }
+    ],
+    "lightnovel":[
+        {
+            "kind":"mongatari",
+            "itemDetail":"bake light novel vol 1",
+            "price":999,
+            "imgUrl":"bakemono1.jpeg"
         }
     ]
 }

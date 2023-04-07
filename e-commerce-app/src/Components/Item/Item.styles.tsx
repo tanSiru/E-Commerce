@@ -3,9 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`  
     width:175px;
     height:200px;
-    /* margin-top:50px; */
     margin-left:50px;
-    
 
 `;
 
@@ -16,7 +14,7 @@ export const Content = styled.div`
 `;
 
 export const ImgDiv = styled.div`
-    width:100%:
+    width:100%;
     height:150px;
     display:flex;
     flex-direction:column;
@@ -41,7 +39,7 @@ export const ItemDetail = styled.div`
 `;
 
 export const Price = styled.div`
-    width:100%:
+    width:100%;
     height:50px;
     text-align: center;
     font-weight:50px;

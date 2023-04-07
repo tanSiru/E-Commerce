@@ -1,6 +1,7 @@
 import { Content, Wrapper } from './TopBar.styles'
 import Cart from '../Cart/Cart'
 import SearchBar from '../SearchBar/SearchBar'
+import FilterBar from '../FilterBar/FilterBar'
 
 export default function TopBar() {
   return (
@@ -8,6 +9,7 @@ export default function TopBar() {
         <Content>
             <Cart/>
             <SearchBar/>
+            <FilterBar/>
         </Content>
     </Wrapper>
   )
