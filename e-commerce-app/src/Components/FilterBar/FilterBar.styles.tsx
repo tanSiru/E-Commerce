@@ -25,18 +25,24 @@ export const DropDown = styled.div`
     border-radius: 10px;
     border:1px solid black;
     translate:20px -20px;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    
 `;
 
-export const Select = styled.ul`
-    width:100%;
-    height:100%;
-    list-style-type: none;  
-    /* overflow-y:auto; */
-`;
 export const Option = styled.li`
-    width:200px;
-    height:50px;
-    background-color: red;
+    width:100%;
+    height:35px;
     border-radius: 10px;
+    border:1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+    margin-top:10px;
+
 `;
 
