@@ -26,9 +26,9 @@ export const DropDown = styled.div`
     border:1px solid black;
     translate:20px -20px;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     overflow-y: auto;
-    
 `;
 
 export const Option = styled.li`
