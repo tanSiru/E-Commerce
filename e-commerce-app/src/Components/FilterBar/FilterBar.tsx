@@ -1,4 +1,4 @@
-import {useContext, useState} from 'react'
+import {useContext, useState,useEffect} from 'react'
 import { Content, DropDown, Img, Option, Wrapper } from './FilterBar.styles'
 import data from '../../itemdata.json'
 import { MyContext } from '../../context';
@@ -16,6 +16,12 @@ export default function FilterBar() {
     const [newFilter,setNewFilter] = useState('')
     const {filter,setFilter} = useContext(MyContext)
 
+    useEffect(()=>{
+        setFilter(newFilter)
+        setNewFilter(newFilter)
+        setFilter(newFilter)
+    }, [setFilter, newFilter, filter])
+
 
     function handleClose(){
         setIsOpen(!isOpen)
@@ -23,8 +29,6 @@ export default function FilterBar() {
 
     function handleFilter(newVal:string){
         setNewFilter(newVal)
-        setFilter(newFilter)
-        console.log(filter)
     }
 
     return (

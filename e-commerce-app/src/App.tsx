@@ -7,7 +7,7 @@ import {MyContext} from './context'
 
 
 function App() {
-  const [filter,setFilter] = useState('all')
+  const [filter,setFilter] = useState('plush')
   const value = { filter,setFilter};
   
 

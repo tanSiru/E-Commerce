@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { MyContext } from '../../context';
 import { Wrapper, Content, Img, ImgDiv, ItemDetail, Price } from './Item.styles'
 
 type Props = {
@@ -8,11 +10,13 @@ type Props = {
 }
 
     export default function Item({detail, alt, imgUrl, price}:Props) {
+    const {filter} = useContext(MyContext)
+
     return (
         <Wrapper>
-            <Content>
+            <Content onClick={()=>console.log(filter)}>
 
-                <ImgDiv>
+                <ImgDiv >
                     <Img src={require("../../ProductImages/" + imgUrl)} alt={alt}/>
                 </ImgDiv>
 

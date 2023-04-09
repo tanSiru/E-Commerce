@@ -6,6 +6,6 @@ interface IMenuContext {
 
 
 export const MyContext = createContext<IMenuContext>({
-    filter:'all',
+    filter:'plush',
     setFilter:()=>{}
     });
