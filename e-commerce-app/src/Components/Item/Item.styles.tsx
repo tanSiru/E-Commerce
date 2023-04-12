@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`  
     width:175px;
-    height:200px;
+    height:250px;
     margin-left:50px;
 
 `;
@@ -11,6 +11,10 @@ export const Content = styled.div`
     width:100%;
     height:100%;
     border:1px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const ImgDiv = styled.div`
@@ -45,3 +49,13 @@ export const Price = styled.div`
     font-weight:50px;
 `;
 
+export const AddItem = styled.button`
+    width:50px;
+    height:50px;
+    border-radius: 25%;
+    border: 1px solid black;
+    font-weight:bold;
+    margin-bottom:5px;
+    background-color: white;
+    /* :focus{ border: none; } */
+`;

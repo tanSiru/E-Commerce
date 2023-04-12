@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { MyContext } from '../../context';
-import { Wrapper, Content, Img, ImgDiv, ItemDetail, Price } from './Item.styles'
+import { Wrapper, Content, Img, ImgDiv, ItemDetail, Price, AddItem } from './Item.styles'
 
 type Props = {
     detail:string;
@@ -14,7 +14,7 @@ type Props = {
 
     return (
         <Wrapper>
-            <Content onClick={()=>console.log(filter)}>
+            <Content>
 
                 <ImgDiv >
                     <Img src={require("../../ProductImages/" + imgUrl)} alt={alt}/>
@@ -27,7 +27,7 @@ type Props = {
                 <Price>
                     ${price}
                 </Price>
-
+                <AddItem>Add to carrt</AddItem>
             </Content>
         </Wrapper>
     )

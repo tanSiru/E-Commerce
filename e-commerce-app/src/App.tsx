@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <MyContext.Provider value={value}>
-        <TopBar />
+        <TopBar/>
         <GridItem/>
       </MyContext.Provider>
       
