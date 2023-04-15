@@ -1,11 +1,21 @@
 import {Dispatch, SetStateAction, createContext} from 'react'
-interface IMenuContext {
+import CartItem from './Components/CartItem/CartItem';
+
+export interface CartProps{
+    price:string;
+    detail:string;
+    imgUrl:string;
+}
+
+interface ContextProps {
     filter: string;
     setFilter: Dispatch<SetStateAction<string>>;
+    CartItems:CartProps[];
     }
 
 
-export const MyContext = createContext<IMenuContext>({
+export const MyContext = createContext<ContextProps>({
     filter:'plush',
-    setFilter:()=>{}
+    setFilter:()=>{},
+    CartItems:[]
     });
