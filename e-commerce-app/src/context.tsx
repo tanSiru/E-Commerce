@@ -11,11 +11,13 @@ interface ContextProps {
     filter: string;
     setFilter: Dispatch<SetStateAction<string>>;
     CartItems:CartProps[];
+    setCartItems:Function;
     }
 
 
 export const MyContext = createContext<ContextProps>({
     filter:'plush',
     setFilter:()=>{},
-    CartItems:[]
+    CartItems:[],
+    setCartItems:Function,
     });

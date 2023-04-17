@@ -10,7 +10,13 @@ type Props = {
 }
 
     export default function Item({detail, alt, imgUrl, price}:Props) {
-    const {filter} = useContext(MyContext)
+    const {setCartItems,CartItems} = useContext(MyContext)
+
+    function handleAddCartItem(){
+        let temp = {price,imgUrl,detail}
+        setCartItems([...CartItems,temp])
+        console.log(CartItems)
+    }
 
     return (
         <Wrapper>
@@ -27,7 +33,7 @@ type Props = {
                 <Price>
                     ${price}
                 </Price>
-                <AddItem>Add to carrt</AddItem>
+                <AddItem onClick={handleAddCartItem}>Add to carrt</AddItem>
             </Content>
         </Wrapper>
     )

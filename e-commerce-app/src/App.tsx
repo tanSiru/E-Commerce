@@ -9,7 +9,7 @@ import {MyContext, CartProps} from './context'
 function App() {
   const [filter,setFilter] = useState('plush')
   const [CartItems, setCartItems] = useState<CartProps[]>([])
-  const value = { filter,setFilter,CartItems};
+  const value = { filter,setFilter,CartItems, setCartItems};
 
   function addCartItem(price:string,name:string,imgUrl:string,detail:string){
     let temp = {price,name,imgUrl,detail}

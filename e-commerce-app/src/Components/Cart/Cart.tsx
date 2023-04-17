@@ -18,7 +18,7 @@ export default function Cart() {
             <Img src={require('../../ProductImages/cart.png')} alt="CART" onClick={()=>setIsOpen(true)}/>
             <Modal open={isOpen} onClose={onClose}>
                 Items:
-                {CartItems.map(()=><CartItem></CartItem>)}
+                {CartItems.map((stuff,index)=><CartItem key={index} imgUrl={stuff.imgUrl} detail={stuff.detail} price={stuff.price}></CartItem>)}
         
             </Modal>
         </Content>
