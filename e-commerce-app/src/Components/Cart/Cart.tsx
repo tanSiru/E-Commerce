@@ -1,5 +1,5 @@
 import {useState, useContext} from 'react'
-import { CartItemDetailDiv, CartItemDiv, Content, DetailDiv, Img, Wrapper } from './Cart.styles'
+import { CartItemDetailDiv, CartItemDiv, Content, CountDetailDiv, PriceDetailDiv, Img, Wrapper } from './Cart.styles'
 import Modal from '../Modal/Modal'
 import CartItem from '../CartItem/CartItem';
 import { MyContext } from '../../context';
@@ -7,10 +7,13 @@ import { MyContext } from '../../context';
 export default function Cart() {
     const [isOpen,setIsOpen] = useState(false);
     const {CartItems} = useContext(MyContext)
+    const [total,setTotal] = useState(0)
 
     function onClose(){
         setIsOpen(false)
     }
+
+
 
     return (
     <Wrapper>
@@ -19,17 +22,19 @@ export default function Cart() {
             <Modal open={isOpen} onClose={onClose}>
                 Items:
                 <CartItemDiv>
+                    {CartItems.map((stuff)=>total+stuff.price)}
                     {CartItems.map((stuff,index)=><CartItem key={index} imgUrl={stuff.imgUrl} detail={stuff.detail} price={stuff.price}></CartItem>)}
                 </CartItemDiv>
                 Detail:
                 <CartItemDetailDiv>
-                    <DetailDiv>
-            asodjasdas
-                    </DetailDiv>
 
-                    <DetailDiv>
-                        asdasadadadadadaaaadadaaaad
-                    </DetailDiv>
+                    <PriceDetailDiv>
+                        Total Price:{total}
+                    </PriceDetailDiv>
+
+                    <CountDetailDiv>
+                        Item count:{CartItems.length}
+                    </CountDetailDiv>
                     
                 </CartItemDetailDiv>
 

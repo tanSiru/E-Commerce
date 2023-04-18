@@ -1,4 +1,3 @@
-// import React from 'react'
 import { Wrapper, Content, Img, ImgDiv, DetailDiv, ItemPrice, ItemName } from './CartItem.styles'
 
 interface Props{
@@ -8,6 +7,8 @@ interface Props{
 }
 
 export default function CartItem({imgUrl, detail, price}:Props) {
+    
+       
     return (
         <Wrapper>
             <Content>

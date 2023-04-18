@@ -26,14 +26,19 @@ export const CartItemDetailDiv = styled.div`
     height:20%;
     width:100%;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items:center;
 `;
 
-export const DetailDiv = styled.div`
+export const PriceDetailDiv = styled.div`
     height:100%;
     width:50%;
-    background-color: red;
+    align-self:flex-start;
+
 `;
 
+export const CountDetailDiv = styled.div`
+    height:100%;
+    width:50%;
+    align-self:flex-end;
+`;
