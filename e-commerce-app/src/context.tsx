@@ -1,5 +1,4 @@
 import {Dispatch, SetStateAction, createContext} from 'react'
-import CartItem from './Components/CartItem/CartItem';
 
 export interface CartProps{
     price:string;
@@ -12,6 +11,8 @@ interface ContextProps {
     setFilter: Dispatch<SetStateAction<string>>;
     CartItems:CartProps[];
     setCartItems:Function;
+    total:number;
+    setTotal:Function;
     }
 
 
@@ -20,4 +21,6 @@ export const MyContext = createContext<ContextProps>({
     setFilter:()=>{},
     CartItems:[],
     setCartItems:Function,
+    total:0,
+    setTotal:Function,
     });

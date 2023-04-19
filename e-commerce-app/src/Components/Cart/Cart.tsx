@@ -6,8 +6,7 @@ import { MyContext } from '../../context';
 
 export default function Cart() {
     const [isOpen,setIsOpen] = useState(false);
-    const {CartItems} = useContext(MyContext)
-    const [total,setTotal] = useState(0)
+    const {CartItems,total} = useContext(MyContext)
 
     function onClose(){
         setIsOpen(false)
@@ -22,14 +21,13 @@ export default function Cart() {
             <Modal open={isOpen} onClose={onClose}>
                 Items:
                 <CartItemDiv>
-                    {CartItems.map((stuff)=>total+stuff.price)}
                     {CartItems.map((stuff,index)=><CartItem key={index} imgUrl={stuff.imgUrl} detail={stuff.detail} price={stuff.price}></CartItem>)}
                 </CartItemDiv>
                 Detail:
                 <CartItemDetailDiv>
 
                     <PriceDetailDiv>
-                        Total Price:{total}
+                        Total Price:${total}
                     </PriceDetailDiv>
 
                     <CountDetailDiv>

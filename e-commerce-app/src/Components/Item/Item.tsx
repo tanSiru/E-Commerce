@@ -10,12 +10,12 @@ type Props = {
 }
 
     export default function Item({detail, alt, imgUrl, price}:Props) {
-    const {setCartItems,CartItems} = useContext(MyContext)
+    const {setCartItems,CartItems,total,setTotal} = useContext(MyContext)
 
     function handleAddCartItem(){
         let temp = {price,imgUrl,detail}
         setCartItems([...CartItems,temp])
-        console.log(CartItems)
+        setTotal(total+price)
     }
 
     return (

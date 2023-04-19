@@ -7,7 +7,7 @@ import { MyContext } from '../../context';
 
 export default function GridItem(){
   const {filter, setFilter} = useContext(MyContext)
-  const [stuff,setStuff] = useState(filter)
+  const [stuff,_] = useState(filter)
   const [cur,setCur] =  useState(true)
   
   useEffect(()=>{
@@ -15,7 +15,7 @@ export default function GridItem(){
       setFilter(stuff)
       setCur(false)
     }
-  })
+  },[cur, setFilter, stuff])
 
 
   return (
