@@ -2,20 +2,21 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     z-index: 1000;
 `;
 
 export const Content = styled.div`
-    top:50%;
+    position: fixed;
+    top:100px;
     left:50%;
     transform:translate(-50%, -50%);
-    width:100px;
-    height:100px;
-    background-color:red;
-    border-radius: 25px;
+    width:175px;
+    height:75px;
+    background-color:green;
+    border-radius: 15px;
     z-index:1000; 
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;

@@ -1,12 +1,16 @@
 import { Content, Wrapper } from './Popup.styles'
 import { createPortal } from 'react-dom'
 
-export default function Popup() {
+interface Props{
+    text:string
+}
+
+export default function Popup({text}:Props) {
     return createPortal(
         <>
             <Wrapper />
             <Content>
-                asad
+                {text} added!
             </Content>
         </>,
         document.getElementById('popup')!

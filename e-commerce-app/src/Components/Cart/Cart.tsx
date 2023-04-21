@@ -3,7 +3,6 @@ import { CartItemDetailDiv, CartItemDiv, Content, CountDetailDiv, PriceDetailDiv
 import Modal from '../Modal/Modal'
 import CartItem from '../CartItem/CartItem';
 import { MyContext } from '../../context';
-import Popup from '../Popup/Popup';
 
 export default function Cart() {
     const [isOpen,setIsOpen] = useState(false);
@@ -19,7 +18,6 @@ export default function Cart() {
     <Wrapper>
         <Content>
             <Img src={require('../../ProductImages/cart.png')} alt="CART" onClick={()=>setIsOpen(true)}/>
-            <Popup/>
             <Modal open={isOpen} onClose={onClose}>
                 Items:
                 <CartItemDiv>
