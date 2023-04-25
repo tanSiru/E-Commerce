@@ -1,17 +1,18 @@
-import {useState} from 'react'
+import {useContext} from 'react'
 import { Wrapper, Content, Search } from './SearchBar.styles'
+import { MyContext } from '../../context';
 
 export default function SearchBar() {
-    const [text,setText] = useState("");
+    const {dataFilter,setDataFilter} = useContext(MyContext);
 
     function handleChange(e:any){
-        setText(e.target.value)
+        setDataFilter(e.target.value)
     }
 
     return (
         <Wrapper>
             <Content>
-                <Search onChange={handleChange} value={text}/>
+                <Search onChange={handleChange} value={dataFilter}/>
             </Content>
         </Wrapper>
     )

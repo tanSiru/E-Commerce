@@ -6,7 +6,7 @@ import { MyContext } from '../../context';
 
 
 export default function GridItem(){
-  const {filter, setFilter} = useContext(MyContext)
+  const {filter, setFilter,dataFilter} = useContext(MyContext)
   const [stuff,_] = useState(filter)
   const [cur,setCur] =  useState(true)
   
@@ -21,7 +21,14 @@ export default function GridItem(){
   return (
     <Wrapper>
         <Content>
-          {data[filter].map((info,index)=><Item key={index} detail={info.itemDetail} alt={info.itemDetail} price={info.price} imgUrl={info.imgUrl}/>)}
+          {dataFilter.length === 0 && data[filter].map((info,index)=><Item key={index} detail={info.itemDetail} alt={info.itemDetail} price={info.price} imgUrl={info.imgUrl}/>)}
+          {dataFilter.length > 0 && data['all'].filter((stuff)=>{
+            return dataFilter.toLowerCase() === ''
+            ? stuff
+            : stuff.itemDetail.toLowerCase().includes(dataFilter);
+          }).map(
+            (info,index)=><Item key={index} detail={info.itemDetail} alt={info.itemDetail} price={info.price} imgUrl={info.imgUrl}/>
+            )}
         </Content>
     </Wrapper>
   )

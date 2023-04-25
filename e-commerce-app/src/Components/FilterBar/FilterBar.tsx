@@ -15,6 +15,7 @@ export default function FilterBar() {
     const [isOpen,setIsOpen] = useState(false)
     const [newFilter,setNewFilter] = useState('')
     const {filter,setFilter} = useContext(MyContext)
+    
 
     useEffect(()=>{
         setFilter(newFilter)
@@ -30,6 +31,7 @@ export default function FilterBar() {
     function handleFilter(newVal:string){
         setNewFilter(newVal)
     }
+    
 
     return (
     <Wrapper >
@@ -39,6 +41,7 @@ export default function FilterBar() {
                 <DropDown>
                     {Object.keys(data).map((word,index)=><Option key={index} onClick={()=>handleFilter(word)}>{word}</Option>)}
                 </DropDown>
+                
             }
         </Content>
     </Wrapper>

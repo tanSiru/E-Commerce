@@ -13,6 +13,8 @@ interface ContextProps {
     setCartItems:Function;
     total:number;
     setTotal:Function;
+    dataFilter:string;
+    setDataFilter:Function;
     }
 
 
@@ -23,4 +25,6 @@ export const MyContext = createContext<ContextProps>({
     setCartItems:Function,
     total:0,
     setTotal:Function,
+    dataFilter:'',
+    setDataFilter:()=>{},
     });
