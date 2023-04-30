@@ -21,13 +21,13 @@ export default function GridItem(){
   return (
     <Wrapper>
         <Content>
-          {dataFilter.length === 0 && data[filter].map((info,index)=><Item key={index} detail={info.itemDetail} alt={info.itemDetail} price={info.price} imgUrl={info.imgUrl}/>)}
+          {dataFilter.length === 0 && data[filter].map((info,index)=><Item key={index} detail={info.itemDetail} alt={info.itemDetail} price={info.price} imgUrl={info.imgUrl} id={info.id}/>)}
           {dataFilter.length > 0 && data['all'].filter((stuff)=>{
             return dataFilter.toLowerCase() === ''
             ? stuff
             : stuff.itemDetail.toLowerCase().includes(dataFilter);
           }).map(
-            (info,index)=><Item key={index} detail={info.itemDetail} alt={info.itemDetail} price={info.price} imgUrl={info.imgUrl}/>
+            (info,index)=><Item key={index} detail={info.itemDetail} alt={info.itemDetail} price={info.price} imgUrl={info.imgUrl} id={info.id}/>
             )}
         </Content>
     </Wrapper>

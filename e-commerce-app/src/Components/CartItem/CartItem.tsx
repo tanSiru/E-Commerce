@@ -8,7 +8,8 @@ interface Props{
 
 export default function CartItem({imgUrl, detail, price}:Props) {
     
-       
+    
+    
     return (
         <Wrapper>
             <Content>

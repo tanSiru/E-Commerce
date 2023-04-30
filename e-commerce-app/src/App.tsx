@@ -1,9 +1,9 @@
 import './App.css';
-import TopBar from './Components/TopBar/TopBar';
-import GridItem from './Components/GridItem/GridItem';
 import {useState} from 'react'
 import {MyContext, CartProps} from './context'
-
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ItemPage from './Components/ItemPage/ItemPage';
+import Home from './Components/Home';
 
 
 function App() {
@@ -22,13 +22,15 @@ function App() {
 
 
   return (
-    <div className="App">
+    <Router>
       <MyContext.Provider value={value}>
-        <TopBar/>
-        <GridItem/>
+        <Home/>
       </MyContext.Provider>
-      
-    </div>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/:itemID' element={<ItemPage/>}/>
+      </Routes>
+    </Router>
   );
 }
 

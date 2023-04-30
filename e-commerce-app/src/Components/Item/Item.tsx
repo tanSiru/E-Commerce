@@ -2,6 +2,7 @@ import { useContext,useState } from 'react';
 import { MyContext } from '../../context';
 import { Wrapper, Content, Img, ImgDiv, ItemDetail, Price, AddItem } from './Item.styles'
 import Popup from '../Popup/Popup';
+import {useNavigate} from 'react-router-dom';
 
 
 type Props = {
@@ -9,11 +10,15 @@ type Props = {
     alt:string;
     imgUrl:string;
     price:number;
+    id:number;
 }
 
-    export default function Item({detail, alt, imgUrl, price}:Props) {
+    export default function Item({detail, alt, imgUrl, price,id}:Props) {
     const {setCartItems,CartItems,total,setTotal} = useContext(MyContext)
     const [isAlert,setIsAlert] = useState(false);
+
+    const navigate = useNavigate();
+
 
     function handleAddCartItem(){
         setIsAlert(false)
@@ -33,7 +38,7 @@ type Props = {
             {isAlert && <Popup text={detail}/>}
             <Content>
                 <ImgDiv >
-                    <Img src={require("../../ProductImages/" + imgUrl)} alt={alt}/>
+                    <Img src={require("../../ProductImages/" + imgUrl)} alt={alt} onDoubleClick={()=>navigate(`/{id}`)}/>
                 </ImgDiv>
 
                 <ItemDetail>
