@@ -29,7 +29,6 @@ export default function CartItem({imgUrl, detail, price}:Props) {
                         </div>
                     </ItemPrice>
                 </DetailDiv>
-
                 
             </Content>
         </Wrapper>
