@@ -2,7 +2,7 @@ import { useContext,useState } from 'react';
 import { MyContext } from '../../context';
 import { Wrapper, Content, Img, ImgDiv, ItemDetail, Price, AddItem } from './Item.styles'
 import Popup from '../Popup/Popup';
-import {useNavigate,Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 
 type Props = {
