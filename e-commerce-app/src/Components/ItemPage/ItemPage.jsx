@@ -17,9 +17,13 @@ export default function ItemPage() {
                 </ImgDiv>}
                 {state.kind && 
                 <Price>
-                    {state.price}
+                    Price: ${state.price}
                 </Price>}
-
+                {state.kind && 
+                <Price>
+                    {state.itemDetail}
+                </Price>}
+                    Add item
             </Content>
         </Wrapper>
 

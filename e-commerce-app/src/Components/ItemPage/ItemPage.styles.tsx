@@ -41,6 +41,19 @@ export const Img = styled.img`
 export const Price = styled.div`
     width:100%;
     height:50px;
-    background-color: red;
-
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    font-weight:bold;
 `
+
+export const Detail = styled.div`
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    font-weight:bold;
+`;
