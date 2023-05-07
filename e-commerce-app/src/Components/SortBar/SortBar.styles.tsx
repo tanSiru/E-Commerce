@@ -7,8 +7,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-    max-width: 100%;
-    max-height: 100%;
+    width:100%;
+    height:100%;
 `;
 
 export const Img  = styled.img`
@@ -16,6 +16,7 @@ export const Img  = styled.img`
     height: 100%;
     overflow: auto;
 `;
+
 
 export const DropDown = styled.div`
     position:absolute;
@@ -44,4 +45,3 @@ export const Option = styled.li`
     margin-bottom:10px;
     margin-top:10px;
 `;
-

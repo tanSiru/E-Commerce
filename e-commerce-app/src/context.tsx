@@ -15,6 +15,7 @@ interface ContextProps {
     setTotal:Function;
     dataFilter:string;
     setDataFilter:Function;
+    handleSortLowToHigh:Function;
     }
 
 
@@ -27,4 +28,5 @@ export const MyContext = createContext<ContextProps>({
     setTotal:Function,
     dataFilter:'',
     setDataFilter:()=>{},
+    handleSortLowToHigh:()=>{},
     });
