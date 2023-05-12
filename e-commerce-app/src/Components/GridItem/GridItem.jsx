@@ -17,6 +17,20 @@ export default function GridItem(){
     }
   },[cur, setFilter, stuff])
 
+  function lowToHigh(){
+    let temp = data[filter]
+    sortedData.sort(compare)
+  }
+
+  function compare( a:any, b:any ) {
+    if ( a.price < b.price ){
+        return -1;
+    }
+    if ( a.price > b.price ){
+        return 1;
+    }
+    return 0;
+    }
 
   return (
     <Wrapper>
