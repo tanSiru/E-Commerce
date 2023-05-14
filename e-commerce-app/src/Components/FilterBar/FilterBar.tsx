@@ -1,6 +1,5 @@
 import {useContext, useState,useEffect} from 'react'
 import { Content, DropDown, Img, Option, Wrapper } from './FilterBar.styles'
-import data from '../../itemdata.json'
 import { MyContext } from '../../context';
 var randomWords = require('random-words');
 
@@ -14,7 +13,7 @@ for(let i=0;i<11;i++){
 export default function FilterBar() {
     const [isOpen,setIsOpen] = useState(false)
     const [newFilter,setNewFilter] = useState('')
-    const {filter,setFilter} = useContext(MyContext)
+    const {filter,setFilter,data} = useContext(MyContext)
     
 
     useEffect(()=>{

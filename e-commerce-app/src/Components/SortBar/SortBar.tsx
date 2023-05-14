@@ -11,7 +11,6 @@ export default function SortBar() {
         setIsOpen(!isOpen)
     }
 
-    
 
     return (
         <Wrapper>

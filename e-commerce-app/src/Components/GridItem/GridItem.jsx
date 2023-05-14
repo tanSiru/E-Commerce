@@ -1,12 +1,11 @@
 import { Content, Wrapper } from './GridItem.styles'
-import data from '../../itemdata.json'
 import Item from '../Item/Item'
 import {useState,useContext, useEffect} from 'react';
 import { MyContext } from '../../context';
 
 
 export default function GridItem(){
-  const {filter, setFilter,dataFilter} = useContext(MyContext)
+  const {filter, setFilter,dataFilter, data} = useContext(MyContext)
   const [stuff,_] = useState(filter)
   const [cur,setCur] =  useState(true)
   
@@ -17,20 +16,6 @@ export default function GridItem(){
     }
   },[cur, setFilter, stuff])
 
-  function lowToHigh(){
-    let temp = data[filter]
-    sortedData.sort(compare)
-  }
-
-  function compare( a:any, b:any ) {
-    if ( a.price < b.price ){
-        return -1;
-    }
-    if ( a.price > b.price ){
-        return 1;
-    }
-    return 0;
-    }
 
   return (
     <Wrapper>

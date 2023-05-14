@@ -2,9 +2,9 @@ import TopBar from './TopBar/TopBar';
 import GridItem from './GridItem/GridItem';
 import { useState } from 'react';
 import { CartProps, MyContext } from '../context';
-import data from '../itemdata.json'
-import {useEffect} from 'react';
+import a from '../itemdata.json'
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface ItemProps{
     kind:string;
     itemDetail:string;
@@ -16,16 +16,12 @@ interface ItemProps{
 
 
 export default function Home() {
-    const [filter,setFilter] = useState('plush')
+    const [data,setData] = useState(a)
+    const [filter,setFilter] = useState<string>('plush')
     const [CartItems, setCartItems] = useState<CartProps[]>([])
     const [total,setTotal] = useState(0)
     const [dataFilter,setDataFilter] = useState('')
-    const [sortedData,setSortedData] = useState<any[]>([])
 
-    useEffect(() =>{
-        setSortedData(data[filter as keyof typeof data])
-        sortedData.sort(compare)
-    }, [filter, sortedData])  
 
     function compare( a:any, b:any ) {
         if ( a.price < b.price ){
@@ -38,12 +34,18 @@ export default function Home() {
         }
 
     function handleSortLowToHigh(){
-        console.log(sortedData)
+        let copy = data
+        let temp = data[filter as keyof typeof data].sort(compare)
+        setData({
+            ...copy,
+            [filter]:temp
+        })
+
     }
 
     
 
-    const value = { filter,setFilter,CartItems, setCartItems,total,setTotal,dataFilter,setDataFilter,handleSortLowToHigh};
+    const value = { filter,setFilter,CartItems, setCartItems,total,setTotal,dataFilter,setDataFilter,handleSortLowToHigh,data};
 
     
 

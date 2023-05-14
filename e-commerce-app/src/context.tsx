@@ -1,10 +1,28 @@
 import {Dispatch, SetStateAction, createContext} from 'react'
+import PropTypes from 'prop-types';
 
 export interface CartProps{
     price:string;
     detail:string;
     imgUrl:string;
 }
+
+export interface ItemProps{
+    kind:string,
+    itemDetail:string,
+    price:number,
+    imgUrl:string,
+    id:number
+}
+
+//https://transform.tools/json-to-proptypes
+type Data = {
+    plush?:ItemProps[],
+    manga?:ItemProps[],
+    lightnovel?:ItemProps[],
+    all?:ItemProps[],
+    }
+    
 
 interface ContextProps {
     filter: string;
@@ -16,6 +34,7 @@ interface ContextProps {
     dataFilter:string;
     setDataFilter:Function;
     handleSortLowToHigh:Function;
+    data:Data;
     }
 
 
@@ -29,4 +48,5 @@ export const MyContext = createContext<ContextProps>({
     dataFilter:'',
     setDataFilter:()=>{},
     handleSortLowToHigh:()=>{},
+    data:{plush:[]},
     });
