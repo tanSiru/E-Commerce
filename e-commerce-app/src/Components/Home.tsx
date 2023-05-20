@@ -16,14 +16,15 @@ interface ItemProps{
 
 
 export default function Home() {
-    const [data,setData] = useState(a)
+    let copied = Object.assign({}, a);
+    const [data,setData] = useState(copied)
     const [filter,setFilter] = useState<string>('plush')
     const [CartItems, setCartItems] = useState<CartProps[]>([])
     const [total,setTotal] = useState(0)
     const [dataFilter,setDataFilter] = useState('')
 
 
-    function compare( a:any, b:any ) {
+    function compareLowToHigh( a:any, b:any ) {
         if ( a.price < b.price ){
             return -1;
         }
@@ -33,19 +34,41 @@ export default function Home() {
         return 0;
         }
 
+        function compareHighToLow( a:any, b:any ) {
+            if ( a.price < b.price ){
+                return 1;
+            }
+            if ( a.price > b.price ){
+                return -1;
+            }
+            return 0;
+            }
+
     function handleSortLowToHigh(){
         let copy = data
-        let temp = data[filter as keyof typeof data].sort(compare)
+        let temp = data[filter as keyof typeof data].sort(compareLowToHigh)
         setData({
             ...copy,
             [filter]:temp
         })
+    }
 
+    function handleSortHighToLow(){
+        let copy = data
+        let temp = data[filter as keyof typeof data].sort(compareHighToLow)
+        setData({
+            ...copy,
+            [filter]:temp
+        })
+    }
+
+    function sortReset(){
+        setData(a)
     }
 
     
 
-    const value = { filter,setFilter,CartItems, setCartItems,total,setTotal,dataFilter,setDataFilter,handleSortLowToHigh,data};
+    const value = { filter,setFilter,CartItems, setCartItems,total,setTotal,dataFilter,setDataFilter,handleSortLowToHigh,handleSortHighToLow,data,sortReset};
 
     
 

@@ -34,6 +34,8 @@ interface ContextProps {
     dataFilter:string;
     setDataFilter:Function;
     handleSortLowToHigh:Function;
+    handleSortHighToLow:Function;
+    sortReset:Function;
     data:Data;
     }
 
@@ -48,5 +50,7 @@ export const MyContext = createContext<ContextProps>({
     dataFilter:'',
     setDataFilter:()=>{},
     handleSortLowToHigh:()=>{},
+    handleSortHighToLow:()=>{},
+    sortReset:()=>{},
     data:{plush:[]},
     });
